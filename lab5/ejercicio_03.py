@@ -28,13 +28,11 @@ def dia_del_anio(mes, dia):
     return total + dia
 
 
-# Pedir el mes y validarlo
 mes = int(input("Ingrese el mes actual (1-12): "))
 while mes < 1 or mes > 12:
     print("Mes inválido, debe estar entre 1 y 12.")
     mes = int(input("Ingrese el mes actual (1-12): "))
 
-# Pedir el día y validarlo con respecto al mes
 maximo = dias_del_mes(mes)
 dia = int(input("Ingrese el día actual: "))
 while dia < 1 or dia > maximo:
