@@ -1,5 +1,5 @@
-import auth
-import operaciones
+from funciones import auth
+from funciones import operaciones5
 
 saldo = 1000.0
 pin_correcto = "1234"
@@ -17,13 +17,13 @@ if auth.verificar_pin(pin_correcto):
 
         match opcion:
             case "1":
-                operaciones.consultar_saldo(saldo)
+                operaciones5.consultar_saldo(saldo)
             case "2":
                 monto = float(input("Ingrese monto a depositar: "))
-                saldo = operaciones.depositar(saldo, monto)
+                saldo = operaciones5.depositar(saldo, monto)
             case "3":
                 monto = float(input("Ingrese monto a retirar: "))
-                saldo = operaciones.retirar(saldo, monto)
+                saldo = operaciones5.retirar(saldo, monto)
             case "4":
                 print("Gracias por usar el cajero.")
                 break

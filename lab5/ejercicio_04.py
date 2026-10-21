@@ -21,7 +21,7 @@ paquete_academico/
 del paquete y prueba generar un resumen para una lista de notas de ejemplo (por ejemplo: [85, 90, 78, 92, 88]).
 """
 
-from paquete_academico import operaciones, reportes
+from funciones import operaciones, reportes
 
 notas = [85, 90, 78, 92, 88]
 reportes.generar_resumen(notas)

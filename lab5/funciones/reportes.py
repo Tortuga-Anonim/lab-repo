@@ -1,4 +1,4 @@
-from paquete_academico import operaciones
+from funciones import operaciones
 
 
 def generar_resumen(lista_notas):

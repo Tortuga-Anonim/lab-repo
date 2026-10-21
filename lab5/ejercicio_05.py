@@ -24,5 +24,5 @@ Debes dividir el código proporcionado en una estructura modular de tres archivo
 
 """
 
-# Versión refactorizada: la lógica está en auth.py, operaciones.py y main.py
-import main
+
+from funciones import main
